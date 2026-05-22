@@ -7,7 +7,7 @@ A collection of AI agent skills for the ProGaming team, designed to work with [V
 Install a skill using the Vercel Skills CLI:
 
 ```bash
-npx skills add progaming/agent-skill
+npx skills add progaming/agent-skills
 ```
 
 For more details on how Vercel Skills works, see the [official documentation](https://github.com/vercel-labs/skills).
