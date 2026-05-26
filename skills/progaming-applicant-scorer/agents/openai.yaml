@@ -1,0 +1,4 @@
+interface:
+  display_name: "ProGaming Applicant Scorer"
+  short_description: "Fetch Gmail applicants and score candidates"
+  default_prompt: "Use -applicant-scorer to fetch and score job applicants from Gmail for ProGaming Co., Ltd."
