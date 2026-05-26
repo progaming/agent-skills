@@ -401,11 +401,24 @@ def print_results(results, summary, out_csv=None):
         print(f"\nCSV saved to: {out_csv}")
 
 
+def _find_project_root():
+    """Walk up from the script location to find the project root (directory containing .agents/)."""
+    d = os.path.abspath(os.path.dirname(__file__))
+    while True:
+        if os.path.isdir(os.path.join(d, ".agents")):
+            return d
+        parent = os.path.dirname(d)
+        if parent == d:
+            break
+        d = parent
+    raise RuntimeError("Could not locate project root (no .agents/ directory found)")
+
+
 def default_workspace():
     from datetime import datetime
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    return os.path.join(r"G:\My Drive\Cowork\tmp", f"applicants_{ts}")
-
+    root = _find_project_root()
+    return os.path.join(root, "tmp", f"applicants_{ts}")
 
 def main():
     parser = argparse.ArgumentParser(description="Score ProGaming applicants from local Gmail exports.")
