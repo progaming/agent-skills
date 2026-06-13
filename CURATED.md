@@ -1,11 +1,11 @@
-googleworkspace/cli
+## Recommended
 
-vercel-labs/agent-browser
+- googleworkspace/cli
+- Agents365-ai/drawio-skill
+- tmdgusya/tldraw-desktop-skill
 
-Agents365-ai/drawio-skill
+## Honorable Mentions
 
-openclaw/mcporter
-
-OpenClaudia/openclaudia-skills
-
-tmdgusya/tldraw-desktop-skill
+- vercel-labs/agent-browser
+- openclaw/mcporter
+- OpenClaudia/openclaudia-skills
